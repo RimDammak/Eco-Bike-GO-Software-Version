@@ -236,28 +236,7 @@ public class InterfaceCRUDRecController implements Initializable {
     }
     
     
-   /* private void searchEvent(ActionEvent event) {
-       
-            String requette = "select nom_event,date_event,locate_event,photo_event,dispoplace_event from event where id_event ='"+Integer.parseInt(serarch_field.getText())+"'";
-    try{
-        PreparedStatement pst = conn.prepareStatement(requette);
-        ResultSet rs = pst.executeQuery();
-        if (rs.next()) {
-            nom_field.setText(rs.getString("nom_event"));
-            Date date = rs.getDate("date_event");
-            date_field.setValue(date.toLocalDate());
-            locate_field.setText(rs.getString("locate_event"));
-            Blob imageBlob = rs.getBlob("photo_event");
-            InputStream imageStream = imageBlob.getBinaryStream();
-            Image image = new Image(imageStream);
-            photo_field.setImage(image);
-            int dispo = rs.getInt("dispoplace_event");
-            dispo_field.setText(String.valueOf(dispo));
-        }
-    } catch (SQLException e) {
-        e.printStackTrace();
-    }
-    }*/
+  
     
     
     
