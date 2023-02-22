@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="1163.0" stylesheets="@../Assets/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.InterfaceStationController">
+   <children>
+      <Button layoutX="259.0" layoutY="324.0" mnemonicParsing="false" onAction="#addStat" prefHeight="74.0" prefWidth="178.0" text="Stations" />
+      <Button layoutX="609.0" layoutY="330.0" mnemonicParsing="false" onAction="#ConsultResCli" prefHeight="68.0" prefWidth="178.0" text="Consulter Reservation" />
+   </children>
+</AnchorPane>
