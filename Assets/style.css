@@ -1,0 +1,25 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.root{
+    -fx-background-image:url('/Assets/velo.jpg');
+     -fx-background-size:cover;
+    
+}
+.button {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-family: Arial;
+    -fx-shape: "M50 0 C20 0 0 20 0 50 C0 80 20 100 50 100 C80 100 100 80 100 50 C100 20 80 0 50 0 Z";
+}
+
+.button:hover {
+    -fx-background-color: white;
+    -fx-text-fill: blue;
+}
+
+.button:pressed {
+    -fx-background-color: green;
+}

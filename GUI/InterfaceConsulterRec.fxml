@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="643.0" prefWidth="1163.0" stylesheets="@../Assets/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.InterfaceCRUDRecController">
+   <children>
+      <TableView fx:id="TviewRec" layoutX="312.0" layoutY="57.0" prefHeight="362.0" prefWidth="835.0">
+         <columns>
+            <TableColumn fx:id="col_id_rec" prefWidth="75.0" text="id_reclamation" />
+            <TableColumn fx:id="col_type_rec" prefWidth="182.39996337890625" text="type_reclamation" />
+            <TableColumn fx:id="col_date_rec" prefWidth="135.19989013671875" text="Date_reclamation" />
+            <TableColumn fx:id="col_descrip" prefWidth="145.60009765625" text="Description Reclamation" />
+            <TableColumn fx:id="col_etat" prefWidth="84.8001708984375" text="Etat Reclamation" />
+            <TableColumn fx:id="col_reponse" minWidth="0.0" prefWidth="48.800048828125" text="Reponse" />
+            <TableColumn fx:id="col_IdUser" minWidth="0.0" prefWidth="168.0" text="Id_User" />
+         </columns>
+      </TableView>
+      <TextArea fx:id="text_rec" layoutX="21.0" layoutY="238.0" prefHeight="200.0" prefWidth="243.0" promptText="texte_rec" />
+      <Button fx:id="btn_ajouter_rec" layoutX="98.0" layoutY="562.0" mnemonicParsing="false" onAction="#ajouter_on_action" prefHeight="26.0" prefWidth="104.0" text="AJOUTER" />
+      <Button fx:id="btn_modf_rec" layoutX="478.0" layoutY="489.0" mnemonicParsing="false" onAction="#mod_on_action" prefHeight="26.0" prefWidth="104.0" text="MODIFIER" />
+      <Button fx:id="btn_sup_rec" layoutX="686.0" layoutY="489.0" mnemonicParsing="false" onAction="#supprimer_on_action" prefHeight="26.0" prefWidth="104.0" text="SUPPRIMER" />
+      <TextField fx:id="text_id_type" layoutX="23.0" layoutY="78.0" prefHeight="26.0" prefWidth="210.0" promptText="1 Velo, 2 Stations et 3 evenements" />
+      <Text fill="#131313" layoutX="18.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ecrire Votre Reclamation Ici" />
+      <Text layoutX="16.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type Réclamation" wrappingWidth="117.15505981445312" />
+      <Button fx:id="btn_recherche" layoutX="322.0" layoutY="14.0" mnemonicParsing="false" onAction="#clic_recherche_id" text="Rechercher Par ID" />
+      <TextField fx:id="txt_recher_rec" layoutX="523.0" layoutY="14.0" />
+      <TextField fx:id="txt_Id_User" layoutX="60.0" layoutY="514.0" />
+      <Text layoutX="18.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donner votre ID" />
+      <DatePicker fx:id="txt_date" layoutX="62.0" layoutY="157.0" />
+      <Text layoutX="21.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date du reclamation" />
+   </children>
+</AnchorPane>

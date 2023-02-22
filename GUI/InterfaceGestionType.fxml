@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../Assets/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView layoutX="97.0" layoutY="49.0" prefHeight="163.0" prefWidth="398.0">
+        <columns>
+          <TableColumn fx:id="col_id_type" prefWidth="194.4000244140625" text="Id Type" />
+          <TableColumn fx:id="col_nom_type" prefWidth="203.20001220703125" text="Nom Type" />
+        </columns>
+      </TableView>
+      <Button layoutX="71.0" layoutY="336.0" mnemonicParsing="false" text="Ajouter Type" />
+      <Button layoutX="240.0" layoutY="336.0" mnemonicParsing="false" text="Modifier Type" />
+      <Button layoutX="409.0" layoutY="336.0" mnemonicParsing="false" text="Supprimer Type" />
+      <TextField layoutX="30.0" layoutY="246.0" />
+      <TextField layoutX="30.0" layoutY="290.0" />
+      <Button layoutX="333.0" layoutY="259.0" mnemonicParsing="false" text="Rechercher Type Par ID" />
+   </children>
+</AnchorPane>
