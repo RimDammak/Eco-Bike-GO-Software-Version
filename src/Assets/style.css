@@ -1,0 +1,9 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.root{
+    -fx-background-image:url('/Assets/velo.jpg');
+     -fx-background-size:cover;
+    
+}

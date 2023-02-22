@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="1163.0" stylesheets="@../Assets/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.InterfaceUserController">
+   <children>
+      <TableView fx:id="TviewUser" layoutX="429.0" layoutY="46.0" prefHeight="532.0" prefWidth="677.0">
+        <columns>
+          <TableColumn fx:id="idUser" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nomUser" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="prenomUser" prefWidth="75.0" text="Prenom" />
+            <TableColumn fx:id="DateNaiss" prefWidth="75.0" text="Date De Naissance" />
+            <TableColumn fx:id="telUser" prefWidth="75.0" text="Telphone" />
+            <TableColumn fx:id="emailUser" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="adresseUser" prefWidth="75.0" text="Adresse" />
+            <TableColumn fx:id="mdpUser" prefWidth="75.0" text="MotDePasse" />
+            <TableColumn fx:id="roleUser" prefWidth="75.0" text="Role" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtNom" layoutX="59.0" layoutY="56.0" promptText="Nom" />
+      <TextField fx:id="txtPrenom" layoutX="59.0" layoutY="107.0" promptText="Prenom" />
+      <TextField fx:id="txtTel" layoutX="60.0" layoutY="207.0" promptText="Telephone" />
+      <TextField fx:id="txtEmail" layoutX="59.0" layoutY="263.0" promptText="Email" />
+      <TextField fx:id="txtAdresse" layoutX="59.0" layoutY="312.0" promptText="Adresse" />
+      <TextField fx:id="txtMdp" layoutX="59.0" layoutY="368.0" promptText="Mot De Passe" />
+      <ImageView fx:id="ImgField" fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="txtRole" layoutX="59.0" layoutY="415.0" promptText="Role" />
+      <Button fx:id="btnImg" layoutX="258.0" layoutY="601.0" mnemonicParsing="false" onAction="#ImporterImg" text="Importer" />
+      <Button fx:id="BtnAjUser" layoutX="354.0" layoutY="601.0" mnemonicParsing="false" onAction="#AjouterUser" text="Ajouter" />
+      <Button fx:id="BtnModUser" layoutX="1048.0" layoutY="601.0" mnemonicParsing="false" onAction="#ModifierUser" text="Modifier" />
+      <Button fx:id="BtnSuppUser" layoutX="939.0" layoutY="601.0" mnemonicParsing="false" onAction="#SupprimerUser" text="Supprimer" />
+      <DatePicker fx:id="txtDateNaiss" layoutX="59.0" layoutY="159.0" promptText="Date De Naissance" />
+      <TextField fx:id="Search_field" layoutX="768.0" layoutY="601.0" />
+      <Button fx:id="btnChercher" layoutX="684.0" layoutY="601.0" mnemonicParsing="false" onAction="#ChercherUser" text="chercher" />
+   </children>
+</AnchorPane>
