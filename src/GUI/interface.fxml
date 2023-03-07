@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="adminp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../Assets/client.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.InterfaceController">
+   <children>
+      <SplitPane dividerPositions="0.19953051643192488" prefHeight="720.0" prefWidth="1280.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="vert">
+               <children>
+                  <Label layoutX="68.0" layoutY="266.0" text="nom de admin" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="206.0" prefWidth="144.0" styleClass="vertclair">
+               <children>
+                  <Text fill="#2e8c57" layoutX="266.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EcoBikeGo" textAlignment="CENTER" wrappingWidth="402.15625" AnchorPane.bottomAnchor="576.9296875" AnchorPane.leftAnchor="266.0" AnchorPane.rightAnchor="351.84375" AnchorPane.topAnchor="45.3046875">
+                     <font>
+                        <Font name="System Bold" size="72.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnUser" layoutX="77.0" layoutY="199.0" mnemonicParsing="false" onAction="#userclic" prefHeight="109.0" prefWidth="318.0" text="Gestion User" textFill="#f2f2f2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnVelo" layoutX="77.0" layoutY="376.0" mnemonicParsing="false" onAction="#clicvelo" prefHeight="109.0" prefWidth="318.0" text="Gestion Vélos" textFill="#162614" />
+                  <Button fx:id="btnStation" layoutX="549.0" layoutY="199.0" mnemonicParsing="false" onAction="#clicstation" prefHeight="109.0" prefWidth="318.0" text="Gestion Stations et reservations" />
+                  <Button fx:id="btnEvent" layoutX="549.0" layoutY="376.0" mnemonicParsing="false" onAction="#clicevent" prefHeight="109.0" prefWidth="318.0" text="Gestion Evénements" />
+                  <Button fx:id="btnRec" layoutX="77.0" layoutY="547.0" mnemonicParsing="false" onAction="#clicrec" prefHeight="109.0" prefWidth="318.0" text="Gestion Réclamations" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="62.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="48.0" layoutY="667.0" mnemonicParsing="false" onAction="#retourstation" text="Déconnexion" />
+   </children>
+</AnchorPane>

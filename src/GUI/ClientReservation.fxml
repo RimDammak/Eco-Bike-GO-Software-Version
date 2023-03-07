@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="reservationpanel" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../Assets/client.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ClientReservationController">
+   <children>
+      <SplitPane dividerPositions="0.20031298904538342" prefHeight="720.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="718.0" prefWidth="296.0" styleClass="vert">
+               <children>
+                  <Button layoutX="173.0" layoutY="22.0" mnemonicParsing="false" onAction="#home" text="🏠" textFill="#0d7538" />
+                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="52.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="77.0" layoutY="253.0" text="nom de user" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Button layoutX="40.0" layoutY="657.0" mnemonicParsing="false" onAction="#deconnecter" text="Déconnexion" />
+                  <Button layoutX="23.0" layoutY="22.0" mnemonicParsing="false" onAction="#retourstation" text="⬅" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="718.0" prefWidth="920.0" styleClass="vertclair">
+               <children>
+                  <Label layoutX="103.0" layoutY="36.0" text="Reserver votre velo 🚲" textFill="#2e8c57">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="103.0" layoutY="177.0" text="Nombre de velo à reserver : max=">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="noms" layoutX="440.0" layoutY="132.0" prefHeight="25.0" prefWidth="236.0" />
+                  <Button layoutX="674.0" layoutY="121.0" mnemonicParsing="false" onAction="#retourstation" prefHeight="47.0" prefWidth="58.0" text="🗘" textFill="#0b803c" />
+                  <TextField fx:id="nbrvelo" layoutX="440.0" layoutY="178.0" prefHeight="25.0" prefWidth="289.0" text="1" />
+                  <DatePicker fx:id="dd" layoutX="440.0" layoutY="227.0" prefHeight="25.0" prefWidth="214.0" promptText="Veuillez choisir une date" />
+                  <TextField fx:id="td" layoutX="665.0" layoutY="227.0" prefHeight="25.0" prefWidth="30.0" promptText="hh" text="10" />
+                  <TextField fx:id="td1" layoutX="699.0" layoutY="227.0" prefHeight="25.0" prefWidth="30.0" promptText="mm" text="00" />
+                  <TextField fx:id="nbrj" layoutX="440.0" layoutY="277.0" prefHeight="25.0" prefWidth="289.0" promptText="Veuillez choisir une durée de location" />
+                  <Button layoutX="487.0" layoutY="366.0" mnemonicParsing="false" onAction="#ajouterreservation" prefHeight="47.0" prefWidth="242.0" text="enregistrer reservation 🚴" textFill="#0e805a" />
+                  <Label layoutX="103.0" layoutY="226.0" text="Date de debut et temp">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="max" layoutX="379.0" layoutY="177.0" text="max">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="103.0" layoutY="276.0" text="Nombre de jours">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label layoutX="103.0" layoutY="131.0" text="Votre station">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="idr" layoutX="336.0" layoutY="145.0" text="idinvisible" visible="false" />
+                  <Label layoutX="655.0" layoutY="226.0" text="à">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="695.0" layoutY="226.0" text=":">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="typev" layoutX="440.0" layoutY="323.0" prefHeight="25.0" prefWidth="289.0" promptText="Veuillez chosir le type de velo" />
+                  <Label layoutX="103.0" layoutY="322.0" text="Type de velo">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

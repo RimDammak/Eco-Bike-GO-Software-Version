@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="allp" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../Assets/client.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ClientStationController">
+   <children>
+      <SplitPane dividerPositions="0.20031298904538342" prefHeight="720.0" prefWidth="1280.0">
+        <items>
+          <AnchorPane fx:id="gauche" minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="467.0" stylesheets="@../Assets/client.css">
+               <children>
+                  <Button layoutX="25.0" layoutY="22.0" mnemonicParsing="false" onAction="#retour" text="⬅" />
+                  <Button layoutX="172.0" layoutY="22.0" mnemonicParsing="false" onAction="#home" text="🏠" textFill="#036124" />
+                  <Button layoutX="38.0" layoutY="657.0" mnemonicParsing="false" onAction="#deconnecter" text="Déconnexion" />
+                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="52.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true" />
+                  <Hyperlink layoutX="37.0" layoutY="377.0" onAction="#mesreservations" text="voir mes reservations" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label layoutX="77.0" layoutY="254.0" text="nom de user" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="mohsen" />
+                  <String fx:value="vert" />
+               </styleClass>
+            </AnchorPane>
+          <AnchorPane fx:id="droite" minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="565.0" styleClass="vertclair" stylesheets="@../Assets/client.css">
+               <children>
+                  <TableView fx:id="table" layoutX="104.0" layoutY="141.0" prefHeight="231.0" prefWidth="532.0">
+                    <columns>
+                      <TableColumn fx:id="localisation" prefWidth="291.0" text="Localisation" />
+                      <TableColumn fx:id="nbrvelo" prefWidth="232.0" text="nombre de velo disponible" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="104.0" layoutY="36.0" text="Nos stations 🚴" textFill="#2e8c57">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnr" layoutX="681.0" layoutY="325.0" mnemonicParsing="false" onAction="#allereservation" text="Faire une reservation" textFill="#204a2b" />
+                  <Text fontSmoothingType="LCD" layoutX="102.0" layoutY="498.0" strokeType="OUTSIDE" strokeWidth="0.0" text="👉6 BONNES RAISONS DE LOUER PLUTÔT QU’ACHETER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="116.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="⭐ Un vélo neuf pour un loyer limité et accessible">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <Text layoutX="117.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" text="⭐ Révision et diagnostics électriques annuels inclus">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <Text layoutX="117.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="⭐ Roulez zen grace à l’assurance casse / vol (VAE) et l’assistance en inclusion">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <Text layoutX="117.0" layoutY="604.0" strokeType="OUTSIDE" strokeWidth="0.0" text="⭐ Fini les galères de la revente du vélo">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <Text layoutX="117.0" layoutY="628.0" strokeType="OUTSIDE" strokeWidth="0.0" text="⭐ Bénéficiez des aides pour les vélos électriques">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <Text layoutX="117.0" layoutY="652.0" strokeType="OUTSIDE" strokeWidth="0.0" text="⭐ Changez régulièrement de vélos pour bénéficier des dernières innovations">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <Hyperlink layoutX="681.0" layoutY="141.0" onAction="#mesreservations" text="voir mes reservations">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
