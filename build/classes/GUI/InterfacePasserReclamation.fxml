@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" stylesheets="@../Assets/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PasserReclamationController">
+   <children>
+      <Label layoutX="408.0" layoutY="29.0" prefHeight="36.0" prefWidth="340.0" text="AJOUTER UNE RECLAMATION" textFill="#c7bcbc" />
+      <Text fill="#dfc6c6" layoutX="711.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Que voudrez vous reclamer sur?" />
+      <Text fill="#e1cbcb" layoutX="61.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donnez nous le type de votre reclamation" />
+      <Button fx:id="btn_ajouter_rec" layoutX="127.0" layoutY="467.0" mnemonicParsing="false" onAction="#ajouter_on_action" prefHeight="86.0" prefWidth="369.0" text="AJOUTER" />
+      <TextArea fx:id="text_rec" layoutX="711.0" layoutY="182.0" prefHeight="358.0" prefWidth="340.0" promptText="texte_rec" />
+      <TextField fx:id="text_id_type" layoutX="38.0" layoutY="151.0" prefHeight="70.0" prefWidth="319.0" promptText="1 velo, 2 station,3evements" />
+      <TextField fx:id="txt_Id_User" layoutX="52.0" layoutY="324.0" />
+      <Text fill="#a98383" layoutX="32.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DONNEZ VOTRE ID USER SVP" wrappingWidth="428.73517990112305" />
+      <Button layoutX="839.0" layoutY="23.0" mnemonicParsing="false" onAction="#clic_his" prefHeight="48.0" prefWidth="262.0" text="Mon Historique" />
+   </children>
+</AnchorPane>

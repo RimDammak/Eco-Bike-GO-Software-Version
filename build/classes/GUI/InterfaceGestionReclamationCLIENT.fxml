@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" stylesheets="@../Assets/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.InterfaceGestionReclamationCLIENTController">
+   <children>
+      <ImageView fitHeight="112.0" fitWidth="175.0" layoutX="107.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/re.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="107.0" layoutY="274.0" mnemonicParsing="false" onAction="#passer_rec" text="Passer Réclamtion" />
+      <Button layoutX="776.0" layoutY="274.0" mnemonicParsing="false" onAction="#consulter_rec" text="Consulter Réclamations" />
+      <ImageView fitHeight="112.0" fitWidth="166.0" layoutX="736.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/gestion-des-réclamations.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

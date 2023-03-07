@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/GUI/InterfaceGestionReclamationADMIN.fxml</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/GUI/InterfacePasserReclamation.fxml</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/entite/Reclamation.java</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/service/IServiceRec.java</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/GUI/InterfaceHistorique.fxml</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/service/ServiceReclamation.java</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/GUI/mainfx.java</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/Assets/back.gif</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/GUI/PasserReclamationController.java</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/utils/EmailUtil.java</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/GUI/InterfaceGestionReclamationCLIENT.fxml</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/entite/User.java</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/GUI/InterfaceStatistique.fxml</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/GUI/InterfaceStatistiqueController.java</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/Assets/style.css</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/GUI/InterfaceRepondreRecController.java</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/ecobikego/Rec_rim.java</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/GUI/InterfaceConsulterReclamationController.java</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/Assets/style_1.css</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/GUI/InterfaceController.java</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/entite/Type_Rec.java</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/GUI/InterfaceGestionReclamationCLIENTController.java</file>
+            <file>file:/C:/xampp/htdocs/rec_rim/src/GUI/InterfaceGestionReclamationADMINController.java</file>
+        </group>
+    </open-files>
+</project-private>

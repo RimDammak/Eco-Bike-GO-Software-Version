@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="595.0" prefWidth="913.0" stylesheets="@/Assets/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.InterfaceController">
+   <children>
+      <AnchorPane layoutX="-21.0" layoutY="-21.0" opacity="0.49" prefHeight="684.0" prefWidth="1163.0" style="-fx-background-color: black;" stylesheets="@../Assets/style.css" AnchorPane.bottomAnchor="-68.0" AnchorPane.leftAnchor="-21.0" AnchorPane.rightAnchor="-9.0" AnchorPane.topAnchor="-21.0">
+         <children>
+            <Text fill="WHITE" layoutX="384.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: centre;" text="EcoBikeGo" textAlignment="CENTER" AnchorPane.bottomAnchor="454.6982421875" AnchorPane.leftAnchor="450.0" AnchorPane.rightAnchor="450.0" AnchorPane.topAnchor="46.8076171875">
+               <font>
+                  <Font name="System Bold" size="53.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnUser" layoutX="495.0" layoutY="146.0" mnemonicParsing="false" onAction="#userclic" prefHeight="64.0" prefWidth="342.0" text="Gestion User" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnVelo" layoutX="76.0" layoutY="146.0" mnemonicParsing="false" onAction="#clicvelo" prefHeight="64.0" prefWidth="342.0" text="Gestion Vélos" textFill="#162614" />
+            <Button fx:id="btnStation" layoutX="61.0" layoutY="278.0" mnemonicParsing="false" onAction="#clicstation" prefHeight="64.0" prefWidth="342.0" text="Gestion Stations" />
+            <Button fx:id="btnEvent" layoutX="511.0" layoutY="284.0" mnemonicParsing="false" onAction="#clicevent" prefHeight="64.0" prefWidth="342.0" text="Gestion Evénements" />
+            <Button fx:id="btnRec" layoutX="311.0" layoutY="464.0" mnemonicParsing="false" onAction="#clicrec" prefHeight="64.0" prefWidth="482.0" text="Gestion Rec CLIENT" />
+            <ImageView fitHeight="168.0" fitWidth="220.0" layoutX="963.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/cycling.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="67.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/rec.gif" />
+               </image>
+            </ImageView>
+            <Button fx:id="id_rec_admin" layoutX="726.0" layoutY="389.0" mnemonicParsing="false" onAction="#clicadmin" text="Gestion Rec ADMIN" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

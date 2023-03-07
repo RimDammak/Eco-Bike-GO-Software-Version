@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" stylesheets="@../Assets/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.InterfaceStatistiqueController">
+   <children>
+      <PieChart fx:id="pieChart" layoutX="291.0" layoutY="48.0" prefHeight="448.0" prefWidth="802.0" />
+      <Text layoutX="29.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voici les statistiques des des reclamations Traitées En Cours et Non-Traitées" wrappingWidth="400.3828125" />
+   </children>
+</AnchorPane>
