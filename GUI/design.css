@@ -1,0 +1,58 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 25 févr. 2023, 16:45:43
+    Author     : pc
+*/
+
+.login-bg{
+    -fx-background-color:linear-gradient(to bottom right,#6a9ae7,#426fb1);
+    
+}
+.login-card{
+    -fx-background-color:#13123A;
+    
+}
+.textfield-design{
+    
+    -fx-background-color:#e0f0ff;
+    -fx-background-radius:20px;
+    -fx-border-color:#30363f;
+    -fx-border-radius:20px;
+    -fx-text-inner-color:#000;
+    
+}
+.button-design{
+    
+    -fx-background-color:#30363f;
+    -fx-background-radius:40px;
+    -fx-text-fill:#fff;
+    -fx-cursor:hand;
+    
+}
+.button-design:hover{
+    -fx-background-color:#6a9ae7;
+    
+}
+ 
+.hypertext-design{
+    -fx-text-fill:#fff;
+    -fx-border-color:none;
+    -fx-border-width:0px;
+    
+}
+.text-input{
+    -fx-background-color:rgba(0,0,0,0);
+     -fx-border-width:0 0 1 0;
+     -fx-border-color:#242551;
+     -fx-text-inner-color:#fff;
+}
+.selected-border{
+    -fx-border-color:#fff;
+    -fx-border-width:0 3 0 0;
+}
+.selected:hover{
+    -fx-background-color:#3C3D5B;
+}
